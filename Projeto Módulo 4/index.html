@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Módulo 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <div id="content">
+
+<div id="div-form">
+        <form>
+            <div>
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+
+            <div>
+                <label for="tel">Telefone:</label>
+                <input id="tel" type="tel" name="tel" required>
+            </div>
+
+            <div>
+                <label for="cep">CEP:</label>
+                <input id="cep" type="num" name="cep" required>
+            </div>
+
+            <div>
+                <label for="rua">Rua:</label>
+                <input id="rua" type="text" name="rua" required>
+            </div>
+
+            <div>
+                <label for="num">Número da casa:</label>
+                <input id="num" type="num" name="num" required>
+            </div>
+
+            <div>
+                <label for="complemento">Complemento:</label>
+                <input type="text" name="complemento" id="complemento" required>
+            </div>
+
+            <div>
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" id="bairro" required>
+            </div>
+
+            <div>
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" required>
+            </div>
+
+            <div>
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" id="estado" required>
+            </div>
+            <div>
+                <button onclick="funcaoCadastrar()" type="button">Cadastrar</button>
+            </div>
+        </div>
+        </form>
+        <div id="div-tabela">
+            <h3 id="cadastrados">Cadastrados</h3>
+            <p id="quantidade"></p>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>CEP</th>
+                        <th>Rua</th>
+                        <th>Número</th>
+                        <th>Complemento</th>
+                        <th>Bairro</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>Data</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tbody" >
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
